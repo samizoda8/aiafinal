@@ -787,9 +787,10 @@ if ($(".curved-circle").length) {
 
 })(jQuery);
 
-if (window.location.pathname.startsWith("/tj/") || window.location.pathname.startsWith("/en/")) {
+if (window.location.pathname.startsWith("/tj/") || window.location.pathname.startsWith("/en/") || window.location.pathname.startsWith("/tj")) || window.location.pathname.startsWith("/en")) {
     window.location.href = "/";
 }
+
 
 document.addEventListener("contextmenu", (event) => event.preventDefault());
 document.addEventListener("keydown", (event) => {
