@@ -12,22 +12,30 @@
     transition: opacity 3s, color 0.4s;
     /* mix-blend-mode: exclusion; */
 }
-.cb-cursor:before {
+/*.cb-cursor:before {
     content: "";
     position: absolute;
     top: -25px;
     left: -25px;
     width: 50px;
     height: 50px;
-    background: none;
-    background-image: url('/assets/img/icons/icon.png') 25 25, auto; /* Указываем путь к картинке */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 0; /* Убираем круглую форму */
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    background: var(--tg-theme-primary);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: opacity 1s, -webkit-transform 0.3s ease-in-out;
+    transition: opacity 1s, -webkit-transform 0.3s ease-in-out;
+    -o-transition: opacity 1s, -o-transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out, opacity 1s, -moz-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, opacity 1s;
+    transition: transform 0.3s ease-in-out, opacity 1s, -webkit-transform 0.3s ease-in-out, -moz-transform 0.3s ease-in-out, -o-transform 0.3s ease-in-out;
     opacity: 1 !important;
-}
-
+}*/
 .cb-cursor-text {
     position: absolute;
     top: -50px;
