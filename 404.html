@@ -32,10 +32,6 @@
     const userLang = navigator.language || navigator.userLanguage;
     if (userLang.startsWith('ru')) {
       window.location.href = "/404";
-    } else if (userLang.startsWith('en')) {
-      window.location.href = "/en/404";
-    } else if (userLang.startsWith('tj')) {
-      window.location.href = "/tj/404";
     } else {
       document.body.innerHTML = "<h1>Страница не найдена!</h1>";
     }
@@ -43,7 +39,11 @@
   
 <body>
 
-          <!--Preloader-->
+          <!--Preloader else if (userLang.startsWith('en')) {
+      window.location.href = "/en/404";
+    } else if (userLang.startsWith('tj')) {
+      window.location.href = "/tj/404";
+    } -->
           <div id="preloader">
             <div id="loader" class="loader">
                 <div class="loader-container">
